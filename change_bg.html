@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Change BG </title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        main {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 150px auto;
+            background-color: cyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            animation-name: change_bg;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: reverse;
+            animation-timing-function: linear;
+        }
+
+        @keyframes change_bg {
+            0% {
+                background-color: red;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        Gaurav
+    </main>
+</body>
+</html>
